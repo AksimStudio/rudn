@@ -1,0 +1,13 @@
+
+.map{
+	position: relative;
+	text-align: center;
+	color: grey;
+
+}
+svg {
+
+}
+.part {
+	opacity: 0.2;
+}
