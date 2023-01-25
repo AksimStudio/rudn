@@ -1,107 +1,683 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SVG Map</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Map</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/map.js"></script>
 </head>
+
 <body>
-     
-     <input class="inputtext" type="text">
-			<div class="left-menu">
-			<ul>
-				<li>
-                    <button onclick="mod('All', 'blue')">All</button>
-				</li>
-				<li>
-                    <button onclick="mod('Huawei', '#ffc8cf')">Huawei</button>
-				</li>
-				<li>
-                    <button onclick="mod('ZTE', '#ffec9d')">ZTE</button>
-				</li>
-				<li>
-                    <button onclick="mod('Samsung', '#adbacb')">Samsung</button>
-				</li>
-				<li>
-                    <button onclick="mod('Ericsson', '#0071c1')">Ericsson</button>
-				</li>
-				<li>
-                    <button onclick="mod('Nokia', '#c7efcf')">Nokia</button>
-				</li>
-				<li>
-                    <button onclick="mod('Aviat', '#ffc8cf')">Aviat</button>
-				</li>
-				<li>
-                    <button onclick="mod('affirmedNetworks', '#ff00ff')">Affirmed Networks</button>
-				</li>
-                <li>
-                    <button onclick="mod('Rakuten', 'red')">Rakuten</button>
-				</li>
-			</ul>
-		</div>
-		<div id="map" class="map">
-           <svg width="1110" height="780" viewBox="0 0 3634 4975">
-               <a class="">
 
-               </a>
-              <a class="Milicorm"> 
-                    <g xmlns="http://www.w3.org/2000/svg"><g><path d="M1277.17,620.75l46.041,-0.042l0,318.875l223.167,0" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M1568.25,939.583l-29.167,14.584l7.292,-14.584l-7.292,-14.583l29.167,14.583Z" style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><rect x="1572.92" y="868.75" width="666.667" height="141.667" style="fill:#ffe6cc;stroke:#d79b00;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M2239.58,939.583l83.625,0l0,-95.541l166.667,-0l0,666.666l125,0l-0.292,-46.125" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M2597.92,1464.67l16.875,33.25l16.458,-33.417" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><rect x="239.583" y="427.083" width="583.333" height="291.667" style="fill:#fff2cc;stroke:#d6b656;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="1031.25" y="468.75" width="541.667" height="154.167" style="fill:#fff2cc;stroke:#d6b656;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M822.917,500l0.291,72.917l181.5,-0" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M1026.58,572.917l-29.166,14.583l7.291,-14.583l-7.291,-14.584l29.166,14.584Z" style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M1322.92,635.417l0.291,745.833l223.167,0" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M1568.25,1381.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z" style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M2239.58,1381.25l0.292,-16.667l125,0l0,-333.333l223.167,0" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M2609.92,1031.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z" style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M1327.08,677.083l0,404.167l219.292,0" style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/><path d="M1568.25,1081.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z" style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;"/></g><g><text x="1595.83px" y="941.667px" style="font-family:'Helvetica';font-size:50px;">Affirmed Networks</text></g><g><g><text x="273.515px" y="587.5px" style="font-family:'Helvetica';font-size:50px;">Millicom International...</text></g></g><g><g><text x="1239.21px" y="562.5px" style="font-family:'Helvetica';font-size:62.5px;">Tigo</text></g></g></g>
-               </a>
-               <a class="Telecom">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><path d="M906.25,218.75l0.292,-45.833l139.833,-0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M1068.25,172.917l-29.167,14.583l7.292,-14.583l-7.292,-14.584l29.167,14.584Z" style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><rect x="239.583" y="93.75" width="666.667" height="250" style="fill:#fff;stroke:#000;stroke-width:16.67px;stroke-miterlimit:4;"/><path d="M1614.58,170.833l0.292,-35.125l1833.33,0l0,1750l-127.916,-0.25" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M3298.42,1885.42l29.166,-14.542l-7.291,14.583l7.25,14.584l-29.125,-14.625Z" style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><rect x="1072.92" y="93.75" width="541.667" height="154.167" style="fill:#fff;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><rect x="239.583" y="2635.42" width="583.333" height="291.667" style="fill:#fff;stroke:#000;stroke-width:12.5px;stroke-miterlimit:4;"/><path d="M2239.58,1081.25l187.5,0l0,816.667l160.959,-0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M2609.92,1897.92l-29.167,14.583l7.292,-14.583l-7.292,-14.584l29.167,14.584Z" style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M1281.54,2677.08l-0,-83.041l-1208.33,-0l0,-1208.33l1333.33,0l-0,-304.458l139.833,0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M1568.25,1081.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z" style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><rect x="1031.25" y="2677.08" width="500" height="154.167" style="fill:#fff;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M822.917,2775l83.625,0.125l-0,-43.875l98.166,0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M1026.58,2731.25l-29.166,14.583l7.291,-14.583l-7.291,-14.583l29.166,14.583Z" style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/></g><g><g><text x="269.414px" y="230.698px" style="font-family:'Helvetica';font-size:46.416px;">TSTT (Telecommunications S...</text></g></g><g><g><text x="1228.77px" y="187.5px" style="font-family:'Helvetica';font-size:62.5px;">Bmobile</text></g></g><g><g><text x="320.744px" y="2795.83px" style="font-family:'Helvetica';font-size:50px;">Deutsche Telekom</text></g></g><g><g><text x="1047.08px" y="2766.06px" style="font-family:'Helvetica';font-size:56.027px;">Cable &amp; Wireless...</text></g></g></g>
-               </a>
-               <a class="Infrastructure ">
-                    <g xmlns="http://www.w3.org/2000/svg"><path d="M1572.92,868.75l-0,-108.333l666.666,-0l0,108.333" style="fill:#fff;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M1572.92,868.75l-0,725l666.666,0l0,-725" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M1572.92,868.75l666.666,0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><g><text x="1576.77px" y="837.5px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:58.333px;">Infrastructure suppliers</text></g><rect x="1572.92" y="1010.42" width="666.667" height="141.667" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="1595.83px" y="1083.33px" style="font-family:'Helvetica';font-size:50px;">Ericsson</text></g><rect x="1572.92" y="1152.08" width="666.667" height="158.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="1595.83px" y="1225px" style="font-family:'Helvetica';font-size:50px;">Huawei</text></g><rect x="1572.92" y="1310.42" width="666.667" height="141.667" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="1595.83px" y="1383.33px" style="font-family:'Helvetica';font-size:50px;">Nokia</text></g><g><text x="1595.83px" y="1525px" style="font-family:'Helvetica';font-size:50px;">ZTE</text></g></g>
-               </a>
-               <a class="Countries">
-                    <g xmlns="http://www.w3.org/2000/svg"><path d="M2614.58,327.083l0,-108.333l666.667,0l0,108.333" style="fill:#fff;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M2614.58,327.083l0,2058.33l666.667,-0l0,-2058.33" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><path d="M2614.58,327.083l666.667,0" style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;"/><g><text x="2809.71px" y="295.833px" style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:58.333px;">Countries</text></g><rect x="2614.58" y="327.083" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="400px" style="font-family:'Helvetica';font-size:50px;">Antigua</text></g><rect x="2614.58" y="435.417" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="508.333px" style="font-family:'Helvetica';font-size:50px;">Antigua</text></g><rect x="2614.58" y="543.75" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="616.667px" style="font-family:'Helvetica';font-size:50px;">Argentina</text></g><rect x="2614.58" y="652.083" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="725px" style="font-family:'Helvetica';font-size:50px;">Bolivia</text></g><rect x="2614.58" y="760.417" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="833.333px" style="font-family:'Helvetica';font-size:50px;">Brazil</text></g><rect x="2614.58" y="868.75" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="941.667px" style="font-family:'Helvetica';font-size:50px;">Chile</text></g><rect x="2614.58" y="977.083" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1050px" style="font-family:'Helvetica';font-size:50px;">Colombia</text></g><rect x="2614.58" y="1085.42" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1158.33px" style="font-family:'Helvetica';font-size:50px;">Costa Rica</text></g><rect x="2614.58" y="1193.75" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1266.67px" style="font-family:'Helvetica';font-size:50px;">Ecuador</text></g><rect x="2614.58" y="1302.08" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1375px" style="font-family:'Helvetica';font-size:50px;">Guatemala</text></g><rect x="2614.58" y="1410.42" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1483.33px" style="font-family:'Helvetica';font-size:50px;">Honduras</text></g><rect x="2614.58" y="1518.75" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1591.67px" style="font-family:'Helvetica';font-size:50px;">Mexico</text></g><rect x="2614.58" y="1627.08" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1700px" style="font-family:'Helvetica';font-size:50px;">Paraguay</text></g><rect x="2614.58" y="1735.42" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1808.33px" style="font-family:'Helvetica';font-size:50px;">Peru</text></g><rect x="2614.58" y="1843.75" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="1916.67px" style="font-family:'Helvetica';font-size:50px;">Puerto Rico</text></g><rect x="2614.58" y="1952.08" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="2025px" style="font-family:'Helvetica';font-size:50px;">Salvador</text></g><rect x="2614.58" y="2060.42" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="2133.33px" style="font-family:'Helvetica';font-size:50px;">Trinidad and Tobago</text></g><rect x="2614.58" y="2168.75" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="2241.67px" style="font-family:'Helvetica';font-size:50px;">Uruguay</text></g><rect x="2614.58" y="2277.08" width="666.667" height="108.333" style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;"/><g><text x="2637.5px" y="2350px" style="font-family:'Helvetica';font-size:50px;">Venezuela</text></g></g>
-               </a>
-               <a class="AmericaMovil">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="156.25" y="843.75" width="583.333" height="250" style="fill:#dae8fc;stroke:#6c8ebf;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="781.25" y="1052.08" width="500" height="112.5" style="fill:#dae8fc;stroke:#6c8ebf;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M739.583,906.25l234.167,0l0,119.292" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M973.75,1047.42l-14.583,-29.167l14.583,7.292l14.583,-7.292l-14.583,29.167Z" style="fill:#6c8ebf;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M1281.25,1164.58l0.292,-320.541l278.875,-0.292" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M1560.42,827.083l-33.334,16.709l33.334,16.625" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M2239.58,1443.71l83.625,0.334l0,403.875l283.375,-0.042" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M2239.5,1462.46l37.583,-18.583l-37.416,-18.917" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M2606.58,1831.21l-33.333,16.667l33.333,16.667" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M622.917,1093.75l0.291,208.625l89.834,-0.208" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M734.917,1302.08l-29.125,14.667l7.25,-14.583l-7.334,-14.584l29.209,14.5Z" style="fill:#6c8ebf;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><rect x="739.583" y="1260.42" width="500" height="112.5" style="fill:#dae8fc;stroke:#6c8ebf;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M1239.58,1288.54l50.292,0.5l0,-111.667l116.667,0l-0,-141.667l143.833,-0.291" style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/><path d="M1572.25,1035.38l-29.125,14.625l7.25,-14.583l-7.333,-14.584l29.208,14.542Z" style="fill:#6c8ebf;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;"/></g><g><g><text x="288.863px" y="983.333px" style="font-family:'Helvetica';font-size:50px;">America Movil</text></g></g><g><g><text x="954.49px" y="1125px" style="font-family:'Helvetica';font-size:62.5px;">Claro</text></g></g><g><g><text x="904.141px" y="1333.33px" style="font-family:'Helvetica';font-size:62.5px;">Telcel</text></g></g></g>
-               </a>
-               <a class="Telefonica">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="114.583" y="1420.83" width="583.333" height="291.667" style="fill:#f8cecc;stroke:#b85450;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="822.917" y="1510.42" width="500" height="112.5" style="fill:#f8cecc;stroke:#b85450;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M697.917,1566.67l0.291,-47.625l83.334,-0l-0,47.75l14.833,-0.042" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M818.25,1566.67l-29.125,14.708l7.25,-14.625l-7.333,-14.542l29.208,14.459Z" style="fill:#b85450;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M1168.92,1506.25l-0.167,-37.208l196.125,-0l0,-678.917l212.042,0.292" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:8.33px;"/><path d="M1576.96,771.667l-37.541,18.708l37.458,18.792" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:8.33px;"/><path d="M2156.25,760.417l0.292,-108.042l278.875,0l-0,-271.125l179.166,0" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M2614.58,364.583l-33.333,16.667l33.333,16.667" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><rect x="864.583" y="1664.58" width="500" height="112.5" style="fill:#f8cecc;stroke:#b85450;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M697.917,1712.5l0.291,-47.917l125,0l0,54.459l15.125,-0" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M860.208,1719.04l-29.166,14.583l7.291,-14.583l-7.291,-14.584l29.166,14.584Z" style="fill:#b85450;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M1364.58,1720.83l125.292,-0.125l0,40l208.333,0l0,-162.791" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M1681.54,1597.92l16.666,33.333l16.667,-33.333" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M2239.58,1052.08l41.959,0.292l-0,-291.667l250,0l-0,83.334l52.5,-0.209" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M2239.46,1068.75l33.459,-16.458l-33.209,-16.875" style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/><path d="M2605.92,843.75l-29.084,14.708l7.209,-14.625l-7.334,-14.541l29.209,14.458Z" style="fill:#b85450;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;"/></g><g><g><text x="234.635px" y="1579.17px" style="font-family:'Helvetica';font-size:50px;">Telefonica S.A.</text></g></g><g><g><text x="952.761px" y="1583.33px" style="font-family:'Helvetica';font-size:62.5px;">Movistar</text></g></g><g><g><text x="862.393px" y="1737.5px" style="font-family:'Helvetica';font-size:62.5px;">Telefonica Brasi...</text></g></g></g>
-               </a>
-               <a class="TelecomItalia">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="135.417" y="1843.75" width="583.333" height="291.667" style="fill:#d5e8d4;stroke:#82b366;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="906.25" y="1843.75" width="500" height="112.5" style="fill:#d5e8d4;stroke:#82b366;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M718.75,1989.58l0,-20.541l62.792,-0l-0,-66.667l125,-0l-0.042,-3.958" style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/><path d="M906.292,1876.54l14.833,29.041l-14.625,-7.166l-14.542,7.416l14.334,-29.291Z" style="fill:#82b366;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/><path d="M1406.25,1956.25l166.958,0l0,-278.875l66.667,0l-0.292,-71.167" style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/><path d="M1622.92,1606.29l16.791,33.25l16.542,-33.375" style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/><path d="M1906.25,760.417l0.292,-291.375l645.541,-0l0,345.541l35.959,0" style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/><path d="M1931.25,760.458l-24.958,-50.041l-25.042,49.958" style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/><path d="M2609.92,814.583l-29.167,14.584l7.292,-14.584l-7.292,-14.583l29.167,14.583Z" style="fill:#82b366;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;"/></g><g><g><text x="269.385px" y="2004.17px" style="font-family:'Helvetica';font-size:50px;">Telecom Italia</text></g></g><g><g><text x="1013.54px" y="1916.67px" style="font-family:'Helvetica';font-size:62.5px;">TIM Brazil</text></g></g></g>
-               </a>
-               <a class="LibertiLatin">
-                    <g xmlns="http://www.w3.org/2000/svg"><rect x="239.583" y="2218.75" width="583.333" height="291.667" style="fill:#e1d5e7;stroke:#9673a6;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="906.25" y="2122.92" width="500" height="154.167" style="fill:#e1d5e7;stroke:#9673a6;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M822.917,2218.75l-83.042,0.292l0,-41.667l125,0l0,-125l125,0l-0.083,56.5" style="fill:none;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;"/><path d="M989.75,2130.75l-14.542,-29.208l14.584,7.333l14.583,-7.292l-14.625,29.167Z" style="fill:#9673a6;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;"/><rect x="1072.92" y="2302.08" width="541.667" height="195.833" style="fill:#e1d5e7;stroke:#9673a6;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M822.917,2402.08l0.291,41.959l0,-41.667l125,0l0,-41.667l98.167,-0.25" style="fill:none;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;"/><path d="M1068.25,2360.42l-29.125,14.666l7.25,-14.625l-7.333,-14.541l29.208,14.5Z" style="fill:#9673a6;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;"/><path d="M1535.5,2293.67l-0.083,-95.75l-87.209,-0l0,-1103.88l90.375,-0.209" style="fill:none;fill-rule:nonzero;stroke:#9673a6;stroke-width:8.33px;"/><path d="M1563.58,1093.75l-33.291,16.75l8.291,-16.667l-8.333,-16.666l33.333,16.583Z" style="fill:#9673a6;fill-rule:nonzero;stroke:#9673a6;stroke-width:8.33px;"/><g><text x="294.34px" y="2379.17px" style="font-family:'Helvetica';font-size:50px;">Liberty Latin America</text></g><g><text x="938.728px" y="2212.26px" style="font-family:'Helvetica';font-size:56.525px;">Cable &amp; Wireless...</text></g><g><text x="1088.43px" y="2413.36px" style="font-family:'Helvetica';font-size:58.011px;">Liberty Communica...</text></g></g>
-               </a>
-               <a class="Almendra">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="989.583" y="2968.75" width="583.333" height="291.667" style="fill:#60a917;stroke:#2d7600;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="1739.58" y="2927.08" width="500" height="154.167" style="fill:#60a917;stroke:#2d7600;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M1572.92,3081.25l83.625,0l-0,-115.542l56.5,-0.041" style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/><path d="M1734.92,2965.62l-29.167,14.625l7.292,-14.583l-7.292,-14.584l29.167,14.542Z" style="fill:#2d7600;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/><path d="M1864.58,2927.08l0.292,-291.375l-0.292,-1041.96" style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/><path d="M1847.92,1593.75l16.666,33.333l16.667,-33.333" style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/><path d="M2239.58,1385.42l166.959,0.291l-0,278.875l-125,0l-0,312.792l325.041,-0.292" style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/><path d="M2239.54,1402.08l33.375,-16.625l-33.292,-16.708" style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/><path d="M2606.58,1960.42l-33.333,16.708l33.333,16.625" style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;"/></g><g><g><text x="1038.81px" y="3129.17px" style="font-family:'Helvetica';font-size:50px;fill:#fff;">Almendral S.A (Chile)</text></g></g><g><g><text x="1916.27px" y="3020.83px" style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">Entel</text></g></g></g>
-               </a>
-               <a class="Entel">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="322.917" y="3343.75" width="583.333" height="291.667" style="fill:#0050ef;stroke:#001dbc;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="1114.58" y="3412.5" width="500" height="154.167" style="fill:#0050ef;stroke:#001dbc;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M906.25,3511.46l83.625,0.334l0,-43.875l98.167,-0.167" style="fill:none;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;"/><path d="M1109.92,3467.71l-29.125,14.625l7.25,-14.583l-7.292,-14.583l29.167,14.541Z" style="fill:#001dbc;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;"/><path d="M1239.58,3412.5l0.292,-22.917l-291.667,0l0,-170.541l-791.666,-0l-0,-750l-125,-0l-0,-1291.67l1514.83,-0.25" style="fill:none;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;"/><path d="M1568.25,1177.08l-29.167,14.625l7.292,-14.583l-7.292,-14.583l29.167,14.541Z" style="fill:#001dbc;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;"/><path d="M2239.58,1231.25l187.5,0l0,-525l153.167,0" style="fill:none;fill-rule:nonzero;stroke:#001dbc;stroke-width:8.33px;"/><path d="M2605.25,706.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z" style="fill:#001dbc;fill-rule:nonzero;stroke:#001dbc;stroke-width:8.33px;"/></g><g><g><text x="404.089px" y="3504.17px" style="font-family:'Helvetica';font-size:50px;fill:#fff;">Entel S.A. (Bolivia)</text></g></g><g><g><text x="1138.68px" y="3504.66px" style="font-family:'Helvetica';font-size:57.521px;fill:#fff;">Cable &amp; Wireless...</text></g></g></g>
-               </a>
-               <a class="Colombia">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="364.583" y="3718.75" width="583.333" height="291.667" style="fill:#6a00ff;stroke:#3700cc;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="1156.25" y="3635.42" width="541.667" height="195.833" style="fill:#6a00ff;stroke:#3700cc;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M947.917,3804.17l83.625,-0.125l-0,-43.334l98.166,-0.25" style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/><path d="M1151.58,3760.42l-29.125,14.666l7.25,-14.625l-7.333,-14.541l29.208,14.5Z" style="fill:#3700cc;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/><path d="M1427.08,3635.42l0,-41.375l312.792,-0l-0.292,-1987.83" style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/><path d="M1722.92,1606.21l16.666,33.334l16.667,-33.334" style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/><path d="M1989.58,760.417l0.292,-666.375l1541.67,-0l-0,937.208l-223.75,0" style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/><path d="M2014.58,760.417l-24.958,-50l-25.042,50" style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/><path d="M3285.92,1031.25l29.166,-14.583l-7.291,14.583l7.291,14.583l-29.166,-14.583Z" style="fill:#3700cc;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;"/></g><g><g><text x="548.564px" y="3879.17px" style="font-family:'Helvetica';font-size:50px;fill:#fff;">Colombia</text></g></g><g><g><text x="1165.83px" y="3747.11px" style="font-family:'Helvetica';font-size:58.48px;fill:#fff;">Empresa de Teleco...</text></g></g></g>
-               </a>
-               <a class="TelecomArgentina">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="1197.92" y="4010.42" width="583.333" height="291.667" style="fill:#d80073;stroke:#a50040;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="1906.25" y="3829.17" width="500" height="154.167" style="fill:#d80073;stroke:#a50040;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M1443.5,4018.88l-0.292,-79.292l436.5,0" style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/><path d="M1901.58,3939.58l-29.166,14.584l7.291,-14.584l-7.291,-14.583l29.166,14.583Z" style="fill:#a50040;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/><path d="M1989.75,3843.79l0.125,-249.75l291.667,-0l-0,-750l-333.334,-0l-0.291,-1250.29" style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/><path d="M1931.25,1593.75l16.667,33.333l16.666,-33.333" style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/><path d="M2072.92,760.417l0.291,-708.042l1500,0l0,545.542l-265.416,-0" style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/><path d="M2097.92,760.417l-25,-50l-25,50" style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/><path d="M3285.92,597.917l29.166,-14.584l-7.291,14.584l7.291,14.583l-29.166,-14.583Z" style="fill:#a50040;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;"/></g><g><g><text x="1215.19px" y="4169.52px" style="font-family:'Helvetica';font-size:48.207px;fill:#fff;">Telecom Argentina S.A (...</text></g></g><g><g><text x="1902.32px" y="3925px" style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">Telecom Personal</text></g></g></g>
-               </a>
-               <a class="Ecuador">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="406.25" y="4177.08" width="583.333" height="291.667" style="fill:#a20025;stroke:#6f0000;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="718.75" y="4593.75" width="541.667" height="195.833" style="fill:#a20025;stroke:#6f0000;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M843.75,4468.75l41.667,0.292l-0,102.333" style="fill:none;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;"/><path d="M885.417,4593.25l-14.584,-29.167l14.584,7.292l14.583,-7.292l-14.583,29.167Z" style="fill:#6f0000;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;"/><path d="M1031.42,4593.88l0.125,-249.833l1416.67,-0l0,-1666.67l-791.666,0l-0,-625l-125,0l-0,-608.333l6.833,-0.084" style="fill:none;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;"/><path d="M1560.25,1443.75l-29.042,14.875l7.167,-14.667l-7.417,-14.5l29.292,14.292Z" style="fill:#6f0000;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;"/><path d="M2239.58,1335.42l125.292,0.291l0,-87.791l223.167,-0" style="fill:none;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;"/><path d="M2609.92,1247.92l-29.167,14.583l7.292,-14.583l-7.292,-14.584l29.167,14.584Z" style="fill:#6f0000;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;"/></g><g><g><text x="602.718px" y="4337.5px" style="font-family:'Helvetica';font-size:50px;fill:#fff;">Ecuador</text></g></g><g><g><text x="707.913px" y="4708.33px" style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">CNT (Corporacion...</text></g></g></g>
-               </a>
-               <a class="CostaRica">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="1406.25" y="4677.08" width="583.333" height="291.667" style="fill:#fa6800;stroke:#c73500;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="1906.25" y="4439.58" width="500" height="154.167" style="fill:#fa6800;stroke:#c73500;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M1627.33,4660.46l0.292,-145.875l252.083,0" style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/><path d="M1901.58,4514.58l-29.166,14.584l7.291,-14.584l-7.291,-14.583l29.166,14.583Z" style="fill:#c73500;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/><path d="M2406.25,4516.67l83.625,0.125l0,-852.209l83.333,0l0,-1112.21l-500,0l-0.291,-958.625" style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/><path d="M2056.25,1593.75l16.667,33.333l16.666,-33.333" style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/><path d="M2247.5,1468.71l84.042,0.334l-0,41.666l200,0l-0,-371.125l56.5,0" style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/><path d="M2247.42,1487.46l37.583,-18.583l-37.417,-18.917" style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/><path d="M2609.92,1139.58l-29.167,14.584l7.292,-14.584l-7.292,-14.583l29.167,14.583Z" style="fill:#c73500;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;"/></g><g><g><text x="1573.57px" y="4837.5px" style="font-family:'Helvetica';font-size:50px;">Costa Rica</text></g></g><g><g><text x="2006.54px" y="4533.33px" style="font-family:'Helvetica';font-size:62.5px;">Grupo ICE</text></g></g></g>
-               </a>
-               <a class="RedCompartida">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="2572.92" y="4010.42" width="583.333" height="291.667" style="fill:#a0522d;stroke:#6d1f00;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="2656.25" y="3677.08" width="500" height="154.167" style="fill:#a0522d;stroke:#6d1f00;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M2906,3989.71l-0.042,21l0.25,-152.916" style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;"/><path d="M2906.25,3835.92l14.542,29.166l-14.584,-7.291l-14.583,7.25l14.625,-29.125Z" style="fill:#6d1f00;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;"/><path d="M2781.25,3677.08l-124.708,0.292l-0,-916.667l-500,0l-0.292,-1166.96" style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:8.33px;"/><path d="M2137.5,1593.75l18.75,37.5l18.75,-37.5" style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:8.33px;"/><path d="M2239.58,1282.54l83.625,-0.167l0,23.875l125,0l0,266.667l132.042,-0" style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:8.33px;"/><path d="M2239.62,1303.38l41.625,-20.917l-41.708,-20.75" style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:8.33px;"/><path d="M2605.25,1572.92l-33.333,16.666l8.333,-16.666l-8.333,-16.667l33.333,16.667Z" style="fill:#6d1f00;fill-rule:nonzero;stroke:#6d1f00;stroke-width:8.33px;"/></g><g><g><text x="2577.69px" y="4170.83px" style="font-family:'Helvetica';font-size:50px;fill:#fff;">Red Compartida (Mexico)</text></g></g><g><g><text x="2803.44px" y="3770.83px" style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">ATLAN</text></g></g></g>
-               </a>
-               <a class="Uruguay">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><g><rect x="2989.58" y="3385.42" width="583.333" height="291.667" style="fill:#6d8764;stroke:#3a5431;stroke-width:12.5px;stroke-miterlimit:4;"/><rect x="2739.58" y="3093.75" width="500" height="154.167" style="fill:#6d8764;stroke:#3a5431;stroke-width:4.17px;stroke-miterlimit:4;"/><g><g><text x="2916.27px" y="3187.5px" style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">Antel</text></g></g><path d="M3072.92,3385.42l0.291,-62.5l-0.166,-35.959" style="fill:none;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;"/><path d="M3072.92,3265.08l14.75,29.084l-14.625,-7.209l-14.542,7.334l14.417,-29.209Z" style="fill:#3a5431;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;"/><path d="M2948.08,3093.75l0.125,-208.042l-833.333,0l0,-791.666l-750,-0l0,-746.125l169.708,0.041" style="fill:none;fill-rule:nonzero;stroke:#3a5431;stroke-width:8.33px;"/><path d="M2239.58,1177.08l125.292,0.292l0,653.875l41.667,0l-0,225l173.708,0" style="fill:none;fill-rule:nonzero;stroke:#3a5431;stroke-width:8.33px;"/></g><path d="M1559.58,1347.96l-33.333,16.667l8.333,-16.667l-8.333,-16.666l33.333,16.666Z" style="fill:#3a5431;fill-rule:nonzero;stroke:#3a5431;stroke-width:8.33px;"/><path d="M2605.25,2056.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z" style="fill:#3a5431;fill-rule:nonzero;stroke:#3a5431;stroke-width:8.33px;"/></g><g><g><text x="3184.67px" y="3545.83px" style="font-family:'Helvetica';font-size:50px;fill:#fff;">Uruguay</text></g></g></g>
-               </a>
-               <a class="CompaniaAnonima">
-                    <g xmlns="http://www.w3.org/2000/svg"><g><rect x="3031.25" y="2743.75" width="583.333" height="291.667" style="fill:#e3c800;stroke:#b09500;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M2239.58,1343.75l250.292,0.292l0,987.208l90.375,0" style="fill:none;fill-rule:nonzero;stroke:#b09500;stroke-width:8.33px;"/><path d="M2605.25,2331.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z" style="fill:#b09500;fill-rule:nonzero;stroke:#b09500;stroke-width:8.33px;"/><rect x="2739.58" y="2481.25" width="500" height="154.167" style="fill:#e3c800;stroke:#b09500;stroke-width:4.17px;stroke-miterlimit:4;"/><path d="M3247.67,2743.79l-0.042,-24.75l-257.75,-0l0,-49.292" style="fill:none;fill-rule:nonzero;stroke:#b09500;stroke-width:8.33px;"/><path d="M2989.88,2644.75l16.667,33.333l-16.667,-8.333l-16.667,8.333l16.667,-33.333Z" style="fill:#b09500;fill-rule:nonzero;stroke:#b09500;stroke-width:8.33px;"/><path d="M2739.58,2519.79l-499.708,0.333l0,-384.417l-750,0l0,-904.458l48.708,0" style="fill:none;fill-rule:nonzero;stroke:#b09500;stroke-width:8.33px;"/><path d="M1563.58,1231.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z" style="fill:#b09500;fill-rule:nonzero;stroke:#b09500;stroke-width:8.33px;"/></g><g><g><text x="2994.27px" y="2920.83px" style="font-family:'Helvetica';font-size:50px;">Compañía Anónima Nacion...</text></g></g><g><g><text x="2871.14px" y="2575px" style="font-family:'Helvetica';font-size:62.5px;">Movilnet</text></g></g></g>
-               </a>
+    <!-- <style>
+        rect{
+            stroke-width: 4.17px!important;
+        }
+    </style> -->
 
-           </svg>
-          </div>
-	
-	<script src="html/script.js"></script>
+    <div id="map" class="map">
+        <svg width="1110" height="780" viewBox="0 0 3634 4975">
+            <a class="">
+
+            </a>
+            <a class="Milicorm">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path d="M1277.17,620.75l46.041,-0.042l0,318.875l223.167,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M1568.25,939.583l-29.167,14.584l7.292,-14.584l-7.292,-14.583l29.167,14.583Z"
+                            style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <rect x="1572.92" y="868.75" width="666.667" height="141.667"
+                            style="fill:#ffe6cc;stroke:#d79b00;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M2239.58,939.583l83.625,0l0,-95.541l166.667,-0l0,666.666l125,0l-0.292,-46.125"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M2597.92,1464.67l16.875,33.25l16.458,-33.417"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <rect x="239.583" y="427.083" width="583.333" height="291.667"
+                            style="fill:#fff2cc;stroke:#d6b656;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="1031.25" y="468.75" width="541.667" height="154.167"
+                            style="fill:#fff2cc;stroke:#d6b656;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M822.917,500l0.291,72.917l181.5,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M1026.58,572.917l-29.166,14.583l7.291,-14.583l-7.291,-14.584l29.166,14.584Z"
+                            style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M1322.92,635.417l0.291,745.833l223.167,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M1568.25,1381.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z"
+                            style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M2239.58,1381.25l0.292,-16.667l125,0l0,-333.333l223.167,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M2609.92,1031.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z"
+                            style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M1327.08,677.083l0,404.167l219.292,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                        <path d="M1568.25,1081.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z"
+                            style="fill:#d6b656;fill-rule:nonzero;stroke:#d6b656;stroke-width:4.17px;" />
+                    </g>
+                    <g><text x="1595.83px" y="941.667px" style="font-family:'Helvetica';font-size:50px;">Affirmed
+                            Networks</text></g>
+                    <g>
+                        <g><text x="273.515px" y="587.5px" style="font-family:'Helvetica';font-size:50px;">Millicom
+                                International...</text></g>
+                    </g>
+                    <g>
+                        <g><text x="1239.21px" y="562.5px" style="font-family:'Helvetica';font-size:62.5px;">Tigo</text>
+                        </g>
+                    </g>
+                </g>
+            </a>
+            <a class="Telecom">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path d="M906.25,218.75l0.292,-45.833l139.833,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <path d="M1068.25,172.917l-29.167,14.583l7.292,-14.583l-7.292,-14.584l29.167,14.584Z"
+                            style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <rect x="239.583" y="93.75" width="666.667" height="250"
+                            style="fill:#fff;stroke:#000;stroke-width:16.67px;stroke-miterlimit:4;" />
+                        <path d="M1614.58,170.833l0.292,-35.125l1833.33,0l0,1750l-127.916,-0.25"
+                            style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <path d="M3298.42,1885.42l29.166,-14.542l-7.291,14.583l7.25,14.584l-29.125,-14.625Z"
+                            style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <rect x="1072.92" y="93.75" width="541.667" height="154.167"
+                            style="fill:#fff;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="239.583" y="2635.42" width="583.333" height="291.667"
+                            style="fill:#fff;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M2239.58,1081.25l187.5,0l0,816.667l160.959,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <path d="M2609.92,1897.92l-29.167,14.583l7.292,-14.583l-7.292,-14.584l29.167,14.584Z"
+                            style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <path d="M1281.54,2677.08l-0,-83.041l-1208.33,-0l0,-1208.33l1333.33,0l-0,-304.458l139.833,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <path d="M1568.25,1081.25l-29.167,14.583l7.292,-14.583l-7.292,-14.583l29.167,14.583Z"
+                            style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <rect x="1031.25" y="2677.08" width="500" height="154.167"
+                            style="fill:#fff;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M822.917,2775l83.625,0.125l-0,-43.875l98.166,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                        <path d="M1026.58,2731.25l-29.166,14.583l7.291,-14.583l-7.291,-14.583l29.166,14.583Z"
+                            style="fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="269.414px" y="230.698px" style="font-family:'Helvetica';font-size:46.416px;">TSTT
+                                (Telecommunications S...</text></g>
+                    </g>
+                    <g>
+                        <g><text x="1228.77px" y="187.5px"
+                                style="font-family:'Helvetica';font-size:62.5px;">Bmobile</text></g>
+                    </g>
+                    <g>
+                        <g><text x="320.744px" y="2795.83px" style="font-family:'Helvetica';font-size:50px;">Deutsche
+                                Telekom</text></g>
+                    </g>
+                    <g>
+                        <g><text x="1047.08px" y="2766.06px" style="font-family:'Helvetica';font-size:56.027px;">Cable
+                                &amp; Wireless...</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="Infrastructure ">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1572.92,868.75l-0,-108.333l666.666,-0l0,108.333"
+                        style="fill:#fff;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    <path d="M1572.92,868.75l-0,725l666.666,0l0,-725"
+                        style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    <path d="M1572.92,868.75l666.666,0"
+                        style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    <g><text x="1576.77px" y="837.5px"
+                            style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:58.333px;">Infrastructure
+                            suppliers</text></g>
+                    <rect x="1572.92" y="1010.42" width="666.667" height="141.667"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="1595.83px" y="1083.33px" style="font-family:'Helvetica';font-size:50px;">Ericsson</text>
+                    </g>
+                    <rect x="1572.92" y="1152.08" width="666.667" height="158.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="1595.83px" y="1225px" style="font-family:'Helvetica';font-size:50px;">Huawei</text></g>
+                    <rect x="1572.92" y="1310.42" width="666.667" height="141.667"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="1595.83px" y="1383.33px" style="font-family:'Helvetica';font-size:50px;">Nokia</text>
+                    </g>
+                    <g><text x="1595.83px" y="1525px" style="font-family:'Helvetica';font-size:50px;">ZTE</text></g>
+                </g>
+            </a>
+            <a class="Countries">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2614.58,327.083l0,-108.333l666.667,0l0,108.333"
+                        style="fill:#fff;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    <path d="M2614.58,327.083l0,2058.33l666.667,-0l0,-2058.33"
+                        style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    <path d="M2614.58,327.083l666.667,0"
+                        style="fill:none;fill-rule:nonzero;stroke:#000;stroke-width:4.17px;" />
+                    <g><text x="2809.71px" y="295.833px"
+                            style="font-family:'Helvetica-Bold', 'Helvetica';font-weight:700;font-size:58.333px;">Countries</text>
+                    </g>
+                    <rect x="2614.58" y="327.083" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="400px" style="font-family:'Helvetica';font-size:50px;">Antigua</text></g>
+                    <rect x="2614.58" y="435.417" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="508.333px" style="font-family:'Helvetica';font-size:50px;">Antigua</text>
+                    </g>
+                    <rect x="2614.58" y="543.75" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="616.667px" style="font-family:'Helvetica';font-size:50px;">Argentina</text>
+                    </g>
+                    <rect x="2614.58" y="652.083" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="725px" style="font-family:'Helvetica';font-size:50px;">Bolivia</text></g>
+                    <rect x="2614.58" y="760.417" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="833.333px" style="font-family:'Helvetica';font-size:50px;">Brazil</text>
+                    </g>
+                    <rect x="2614.58" y="868.75" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="941.667px" style="font-family:'Helvetica';font-size:50px;">Chile</text></g>
+                    <rect x="2614.58" y="977.083" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1050px" style="font-family:'Helvetica';font-size:50px;">Colombia</text></g>
+                    <rect x="2614.58" y="1085.42" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1154.17px" style="font-family:'Helvetica';font-size:50px;">Costa
+                            Rica</text></g>
+                    <rect x="2614.58" y="1193.75" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1266.67px" style="font-family:'Helvetica';font-size:50px;">Ecuador</text>
+                    </g>
+                    <rect x="2614.58" y="1302.08" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1375px" style="font-family:'Helvetica';font-size:50px;">Guatemala</text>
+                    </g>
+                    <rect x="2614.58" y="1410.42" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1483.33px" style="font-family:'Helvetica';font-size:50px;">Honduras</text>
+                    </g>
+                    <rect x="2614.58" y="1518.75" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1591.67px" style="font-family:'Helvetica';font-size:50px;">Mexico</text>
+                    </g>
+                    <rect x="2614.58" y="1627.08" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1700px" style="font-family:'Helvetica';font-size:50px;">Paraguay</text></g>
+                    <rect x="2614.58" y="1735.42" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1804.17px" style="font-family:'Helvetica';font-size:50px;">Peru</text></g>
+                    <rect x="2614.58" y="1843.75" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="1916.67px" style="font-family:'Helvetica';font-size:50px;">Puerto
+                            Rico</text></g>
+                    <rect x="2614.58" y="1952.08" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="2025px" style="font-family:'Helvetica';font-size:50px;">Salvador</text></g>
+                    <rect x="2614.58" y="2060.42" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="2133.33px" style="font-family:'Helvetica';font-size:50px;">Trinidad and
+                            Tobago</text></g>
+                    <rect x="2614.58" y="2168.75" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="2241.67px" style="font-family:'Helvetica';font-size:50px;">Uruguay</text>
+                    </g>
+                    <rect x="2614.58" y="2277.08" width="666.667" height="108.333"
+                        style="fill:none;stroke:#000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                    <g><text x="2637.5px" y="2350px" style="font-family:'Helvetica';font-size:50px;">Venezuela</text>
+                    </g>
+                </g>
+            </a>
+            <a class="AmericaMovil">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="156.25" y="843.75" width="583.333" height="250"
+                            style="fill:#dae8fc;stroke:#6c8ebf;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="781.25" y="1052.08" width="500" height="112.5"
+                            style="fill:#dae8fc;stroke:#6c8ebf;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M739.583,906.25l234.167,0l0,119.292"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M973.75,1047.42l-14.583,-29.167l14.583,7.292l14.583,-7.292l-14.583,29.167Z"
+                            style="fill:#6c8ebf;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M1281.25,1164.58l0.292,-320.541l278.875,-0.292"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M1560.42,827.083l-33.334,16.709l33.334,16.625"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M2239.58,1443.71l83.625,0.334l0,403.875l283.375,-0.042"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M2239.5,1462.46l37.583,-18.583l-37.416,-18.917"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M2606.58,1831.21l-33.333,16.667l33.333,16.667"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M622.917,1093.75l0.291,208.625l89.834,-0.208"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M734.917,1302.08l-29.125,14.667l7.25,-14.583l-7.334,-14.584l29.209,14.5Z"
+                            style="fill:#6c8ebf;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <rect x="739.583" y="1260.42" width="500" height="112.5"
+                            style="fill:#dae8fc;stroke:#6c8ebf;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M1239.58,1288.54l50.292,0.5l0,-111.667l116.667,0l-0,-141.667l143.833,-0.291"
+                            style="fill:none;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                        <path d="M1572.25,1035.38l-29.125,14.625l7.25,-14.583l-7.333,-14.584l29.208,14.542Z"
+                            style="fill:#6c8ebf;fill-rule:nonzero;stroke:#6c8ebf;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="288.863px" y="983.333px" style="font-family:'Helvetica';font-size:50px;">America
+                                Movil</text></g>
+                    </g>
+                    <g>
+                        <g><text x="954.49px" y="1125px" style="font-family:'Helvetica';font-size:62.5px;">Claro</text>
+                        </g>
+                    </g>
+                    <g>
+                        <g><text x="904.141px" y="1333.33px"
+                                style="font-family:'Helvetica';font-size:62.5px;">Telcel</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="Telefonica">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="114.583" y="1420.83" width="583.333" height="291.667"
+                            style="fill:#f8cecc;stroke:#b85450;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="822.917" y="1510.42" width="500" height="112.5"
+                            style="fill:#f8cecc;stroke:#b85450;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M697.917,1566.67l0.291,-47.625l83.334,-0l-0,47.75l14.833,-0.042"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M818.25,1566.67l-29.125,14.708l7.25,-14.625l-7.333,-14.542l29.208,14.459Z"
+                            style="fill:#b85450;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M1168.92,1506.25l-0.167,-37.208l196.125,-0l0,-678.917l212.042,0.292"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M1576.96,771.667l-37.541,18.708l37.458,18.792"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M2156.25,760.417l0.292,-108.042l278.875,0l-0,-271.125l179.166,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M2614.58,364.583l-33.333,16.667l33.333,16.667"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <rect x="864.583" y="1664.58" width="500" height="112.5"
+                            style="fill:#f8cecc;stroke:#b85450;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M697.917,1712.5l0.291,-47.917l125,0l0,54.459l15.125,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M860.208,1719.04l-29.166,14.583l7.291,-14.583l-7.291,-14.584l29.166,14.584Z"
+                            style="fill:#b85450;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M1364.58,1720.83l125.292,-0.125l0,40l208.333,0l0,-162.791"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M1681.54,1597.92l16.666,33.333l16.667,-33.333"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M2239.58,1052.08l41.959,0.292l-0,-291.667l250,0l-0,83.334l52.5,-0.209"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M2239.46,1068.75l33.459,-16.458l-33.209,-16.875"
+                            style="fill:none;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                        <path d="M2605.92,843.75l-29.084,14.708l7.209,-14.625l-7.334,-14.541l29.209,14.458Z"
+                            style="fill:#b85450;fill-rule:nonzero;stroke:#b85450;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="234.635px" y="1579.17px" style="font-family:'Helvetica';font-size:50px;">Telefonica
+                                S.A.</text></g>
+                    </g>
+                    <g>
+                        <g><text x="952.761px" y="1583.33px"
+                                style="font-family:'Helvetica';font-size:62.5px;">Movistar</text></g>
+                    </g>
+                    <g>
+                        <g><text x="862.393px" y="1737.5px" style="font-family:'Helvetica';font-size:62.5px;">Telefonica
+                                Brasi...</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="TelecomItalia">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="135.417" y="1843.75" width="583.333" height="291.667"
+                            style="fill:#d5e8d4;stroke:#82b366;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="906.25" y="1843.75" width="500" height="112.5"
+                            style="fill:#d5e8d4;stroke:#82b366;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M718.75,1989.58l0,-20.541l62.792,-0l-0,-66.667l125,-0l-0.042,-3.958"
+                            style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                        <path d="M906.292,1876.54l14.833,29.041l-14.625,-7.166l-14.542,7.416l14.334,-29.291Z"
+                            style="fill:#82b366;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                        <path d="M1406.25,1956.25l166.958,0l0,-278.875l66.667,0l-0.292,-71.167"
+                            style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                        <path d="M1622.92,1606.29l16.791,33.25l16.542,-33.375"
+                            style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                        <path d="M1906.25,760.417l0.292,-291.375l645.541,-0l0,345.541l35.959,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                        <path d="M1931.25,760.458l-24.958,-50.041l-25.042,49.958"
+                            style="fill:none;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                        <path d="M2609.92,814.583l-29.167,14.584l7.292,-14.584l-7.292,-14.583l29.167,14.583Z"
+                            style="fill:#82b366;fill-rule:nonzero;stroke:#82b366;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="269.385px" y="2004.17px" style="font-family:'Helvetica';font-size:50px;">Telecom
+                                Italia</text></g>
+                    </g>
+                    <g>
+                        <g><text x="1013.54px" y="1916.67px" style="font-family:'Helvetica';font-size:62.5px;">TIM
+                                Brazil</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="LibertiLatin">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <rect x="239.583" y="2218.75" width="583.333" height="291.667"
+                        style="fill:#e1d5e7;stroke:#9673a6;stroke-width:4.17px;stroke-miterlimit:4;" class="purple-path-1 purple-path-b-2  purple-path-b-1 text" id="purple-el-1" />
+                    <rect x="906.25" y="2122.92" width="500" height="154.167"
+                        style="fill:#e1d5e7;stroke:#9673a6;stroke-width:4.17px;stroke-miterlimit:4;" class="purple-n purple-path-1 purple-path-b-1" />
+                    <path d="M822.917,2218.75l-83.042,0.292l0,-41.667l125,0l0,-125l125,0l-0.083,56.5"
+                        style="fill:none;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;" class="purple-path-b-1 purple-path-1 " />
+                    <path d="M989.75,2130.75l-14.542,-29.208l14.584,7.333l14.583,-7.292l-14.625,29.167Z"
+                        style="fill:#9673a6;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;" class="purple-path-b-1 purple-path-1" />
+                    <rect x="1072.92" y="2302.08" width="541.667" height="195.833"
+                        style="fill:#e1d5e7;stroke:#9673a6;stroke-width:4.17px;stroke-miterlimit:4;" class="purple-path-2 purple-path-1 purple-path-b-2 "/>
+                    <path d="M822.917,2402.08l0.291,41.959l0,-41.667l125,0l0,-41.667l98.167,-0.25"
+                        style="fill:none;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;" class="purple-path-b-2 purple-path-1"/>
+                    <path d="M1068.25,2360.42l-29.125,14.666l7.25,-14.625l-7.333,-14.541l29.208,14.5Z"
+                        style="fill:#9673a6;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;" class="purple-path-b-2 purple-path-1"/>
+                    <path d="M1535.5,2293.67l-0.083,-95.75l-87.209,-0l0,-1103.88l90.375,-0.209"
+                        style="fill:none;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;" class="purple-path-2 purple-path-1 purple-path-b-2 "/>
+                    <path d="M1563.58,1093.75l-33.291,16.75l8.291,-16.667l-8.333,-16.666l33.333,16.583Z"
+                        style="fill:#9673a6;fill-rule:nonzero;stroke:#9673a6;stroke-width:4.17px;" class="purple-path-2 purple-path-1 purple-path-b-2 "/>
+                    <g><text x="294.34px" y="2379.17px" class="purple-path-1 purple-path-b-1 purple-path-b-2 " style="font-family:'Helvetica';font-size:50px;">Liberty Latin
+                            America</text></g>
+                    <g><text x="938.728px" y="2212.26px" class="purple-n purple-path-1 purple-path-b-1" style="font-family:'Helvetica';font-size:56.525px;">Cable &amp;
+                            Wireless...</text></g>
+                    <g><text x="1088.43px" y="2413.36px" class="purple-path-2 purple-path-1 purple-path-b-2 " style="font-family:'Helvetica';font-size:58.011px;">Liberty
+                            Communica...</text></g>
+                </g>
+            </a>
+            <a class="Almendra">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="989.583" y="2968.75" width="583.333" height="291.667"
+                            style="fill:#60a917;stroke:#2d7600;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="1739.58" y="2927.08" width="500" height="154.167"
+                            style="fill:#60a917;stroke:#2d7600;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M1572.92,3081.25l83.625,0l-0,-115.542l56.5,-0.041"
+                            style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                        <path d="M1734.92,2965.62l-29.167,14.625l7.292,-14.583l-7.292,-14.584l29.167,14.542Z"
+                            style="fill:#2d7600;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                        <path d="M1864.58,2927.08l0.292,-291.375l-0.292,-1041.96"
+                            style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                        <path d="M1847.92,1593.75l16.666,33.333l16.667,-33.333"
+                            style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                        <path d="M2239.58,1385.42l166.959,0.291l-0,278.875l-125,0l-0,312.792l325.041,-0.292"
+                            style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                        <path d="M2239.54,1402.08l33.375,-16.625l-33.292,-16.708"
+                            style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                        <path d="M2606.58,1960.42l-33.333,16.708l33.333,16.625"
+                            style="fill:none;fill-rule:nonzero;stroke:#2d7600;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="1038.81px" y="3129.17px"
+                                style="font-family:'Helvetica';font-size:50px;fill:#fff;">Almendral S.A (Chile)</text>
+                        </g>
+                    </g>
+                    <g>
+                        <g><text x="1916.27px" y="3020.83px"
+                                style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">Entel</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="Entel">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="322.917" y="3343.75" width="583.333" height="291.667"
+                            style="fill:#0050ef;stroke:#001dbc;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="1114.58" y="3412.5" width="500" height="154.167"
+                            style="fill:#0050ef;stroke:#001dbc;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M906.25,3511.46l83.625,0.334l0,-43.875l98.167,-0.167"
+                            style="fill:none;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;" />
+                        <path d="M1109.92,3467.71l-29.125,14.625l7.25,-14.583l-7.292,-14.583l29.167,14.541Z"
+                            style="fill:#001dbc;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;" />
+                        <path
+                            d="M1239.58,3412.5l0.292,-22.917l-291.667,0l0,-170.541l-791.666,-0l-0,-750l-125,-0l-0,-1291.67l1514.83,-0.25"
+                            style="fill:none;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;" />
+                        <path d="M1568.25,1177.08l-29.167,14.625l7.292,-14.583l-7.292,-14.583l29.167,14.541Z"
+                            style="fill:#001dbc;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;" />
+                        <path d="M2239.58,1231.25l187.5,0l0,-525l153.167,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;" />
+                        <path d="M2605.25,706.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z"
+                            style="fill:#001dbc;fill-rule:nonzero;stroke:#001dbc;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="404.089px" y="3504.17px"
+                                style="font-family:'Helvetica';font-size:50px;fill:#fff;">Entel S.A. (Bolivia)</text>
+                        </g>
+                    </g>
+                    <g>
+                        <g><text x="1138.68px" y="3504.66px"
+                                style="font-family:'Helvetica';font-size:57.521px;fill:#fff;">Cable &amp;
+                                Wireless...</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="Colombia">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="364.583" y="3718.75" width="583.333" height="291.667"
+                            style="fill:#6a00ff;stroke:#3700cc;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="1156.25" y="3635.42" width="541.667" height="195.833"
+                            style="fill:#6a00ff;stroke:#3700cc;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M947.917,3804.17l83.625,-0.125l-0,-43.334l98.166,-0.25"
+                            style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                        <path d="M1151.58,3760.42l-29.125,14.666l7.25,-14.625l-7.333,-14.541l29.208,14.5Z"
+                            style="fill:#3700cc;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                        <path d="M1427.08,3635.42l0,-41.375l312.792,-0l-0.292,-1987.83"
+                            style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                        <path d="M1722.92,1606.21l16.666,33.334l16.667,-33.334"
+                            style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                        <path d="M1989.58,760.417l0.292,-666.375l1541.67,-0l-0,937.208l-223.75,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                        <path d="M2014.58,760.417l-24.958,-50l-25.042,50"
+                            style="fill:none;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                        <path d="M3285.92,1031.25l29.166,-14.583l-7.291,14.583l7.291,14.583l-29.166,-14.583Z"
+                            style="fill:#3700cc;fill-rule:nonzero;stroke:#3700cc;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="548.564px" y="3879.17px"
+                                style="font-family:'Helvetica';font-size:50px;fill:#fff;">Colombia</text></g>
+                    </g>
+                    <g>
+                        <g><text x="1165.83px" y="3747.11px"
+                                style="font-family:'Helvetica';font-size:58.48px;fill:#fff;">Empresa de Teleco...</text>
+                        </g>
+                    </g>
+                </g>
+            </a>
+            <a class="TelecomArgentina">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="1197.92" y="4010.42" width="583.333" height="291.667"
+                            style="fill:#d80073;stroke:#a50040;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="1906.25" y="3829.17" width="500" height="154.167"
+                            style="fill:#d80073;stroke:#a50040;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M1443.5,4018.88l-0.292,-79.292l436.5,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                        <path d="M1901.58,3939.58l-29.166,14.584l7.291,-14.584l-7.291,-14.583l29.166,14.583Z"
+                            style="fill:#a50040;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                        <path d="M1989.75,3843.79l0.125,-249.75l291.667,-0l-0,-750l-333.334,-0l-0.291,-1250.29"
+                            style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                        <path d="M1931.25,1593.75l16.667,33.333l16.666,-33.333"
+                            style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                        <path d="M2072.92,760.417l0.291,-708.042l1500,0l0,545.542l-265.416,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                        <path d="M2097.92,760.417l-25,-50l-25,50"
+                            style="fill:none;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                        <path d="M3285.92,597.917l29.166,-14.584l-7.291,14.584l7.291,14.583l-29.166,-14.583Z"
+                            style="fill:#a50040;fill-rule:nonzero;stroke:#a50040;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="1215.19px" y="4169.52px"
+                                style="font-family:'Helvetica';font-size:48.207px;fill:#fff;">Telecom Argentina S.A
+                                (...</text></g>
+                    </g>
+                    <g>
+                        <g><text x="1902.32px" y="3925px"
+                                style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">Telecom Personal</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="Ecuador">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="406.25" y="4177.08" width="583.333" height="291.667"
+                            style="fill:#a20025;stroke:#6f0000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="718.75" y="4593.75" width="541.667" height="195.833"
+                            style="fill:#a20025;stroke:#6f0000;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M843.75,4468.75l41.667,0.292l-0,102.333"
+                            style="fill:none;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;" />
+                        <path d="M885.417,4593.25l-14.584,-29.167l14.584,7.292l14.583,-7.292l-14.583,29.167Z"
+                            style="fill:#6f0000;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;" />
+                        <path
+                            d="M1031.42,4593.88l0.125,-249.833l1416.67,-0l0,-1666.67l-791.666,0l-0,-625l-125,0l-0,-608.333l6.833,-0.084"
+                            style="fill:none;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;" />
+                        <path d="M1560.25,1443.75l-29.042,14.875l7.167,-14.667l-7.417,-14.5l29.292,14.292Z"
+                            style="fill:#6f0000;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;" />
+                        <path d="M2239.58,1335.42l125.292,0.291l0,-87.791l223.167,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;" />
+                        <path d="M2609.92,1247.92l-29.167,14.583l7.292,-14.583l-7.292,-14.584l29.167,14.584Z"
+                            style="fill:#6f0000;fill-rule:nonzero;stroke:#6f0000;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="602.718px" y="4337.5px"
+                                style="font-family:'Helvetica';font-size:50px;fill:#fff;">Ecuador</text></g>
+                    </g>
+                    <g>
+                        <g><text x="707.913px" y="4704.17px"
+                                style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">CNT (Corporacion...</text>
+                        </g>
+                    </g>
+                </g>
+            </a>
+            <a class="CostaRica">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="1406.25" y="4677.08" width="583.333" height="291.667"
+                            style="fill:#fa6800;stroke:#c73500;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="1906.25" y="4439.58" width="500" height="154.167"
+                            style="fill:#fa6800;stroke:#c73500;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M1627.33,4660.46l0.292,-145.875l252.083,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                        <path d="M1901.58,4514.58l-29.166,14.584l7.291,-14.584l-7.291,-14.583l29.166,14.583Z"
+                            style="fill:#c73500;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                        <path d="M2406.25,4516.67l83.625,0.125l0,-852.209l83.333,0l0,-1112.21l-500,0l-0.291,-958.625"
+                            style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                        <path d="M2056.25,1593.75l16.667,33.333l16.666,-33.333"
+                            style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                        <path d="M2247.5,1468.71l84.042,0.334l-0,41.666l200,0l-0,-371.125l56.5,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                        <path d="M2247.42,1487.46l37.583,-18.583l-37.417,-18.917"
+                            style="fill:none;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                        <path d="M2609.92,1139.58l-29.167,14.584l7.292,-14.584l-7.292,-14.583l29.167,14.583Z"
+                            style="fill:#c73500;fill-rule:nonzero;stroke:#c73500;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="1573.57px" y="4837.5px" style="font-family:'Helvetica';font-size:50px;">Costa
+                                Rica</text></g>
+                    </g>
+                    <g>
+                        <g><text x="2006.54px" y="4533.33px" style="font-family:'Helvetica';font-size:62.5px;">Grupo
+                                ICE</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="RedCompartida">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="2572.92" y="4010.42" width="583.333" height="291.667"
+                            style="fill:#a0522d;stroke:#6d1f00;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <rect x="2656.25" y="3677.08" width="500" height="154.167"
+                            style="fill:#a0522d;stroke:#6d1f00;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M2906,3989.71l-0.042,21l0.25,-152.916"
+                            style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                        <path d="M2906.25,3835.92l14.542,29.166l-14.584,-7.291l-14.583,7.25l14.625,-29.125Z"
+                            style="fill:#6d1f00;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                        <path d="M2781.25,3677.08l-124.708,0.292l-0,-916.667l-500,0l-0.292,-1166.96"
+                            style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                        <path d="M2137.5,1593.75l18.75,37.5l18.75,-37.5"
+                            style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                        <path d="M2239.58,1282.54l83.625,-0.167l0,23.875l125,0l0,266.667l132.042,-0"
+                            style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                        <path d="M2239.62,1303.38l41.625,-20.917l-41.708,-20.75"
+                            style="fill:none;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                        <path d="M2605.25,1572.92l-33.333,16.666l8.333,-16.666l-8.333,-16.667l33.333,16.667Z"
+                            style="fill:#6d1f00;fill-rule:nonzero;stroke:#6d1f00;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="2577.69px" y="4170.83px"
+                                style="font-family:'Helvetica';font-size:50px;fill:#fff;">Red Compartida (Mexico)</text>
+                        </g>
+                    </g>
+                    <g>
+                        <g><text x="2803.44px" y="3770.83px"
+                                style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">ATLAN</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="Uruguay">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <g>
+                            <rect x="2989.58" y="3385.42" width="583.333" height="291.667"
+                                style="fill:#6d8764;stroke:#3a5431;stroke-width:4.17px;stroke-miterlimit:4;" />
+                            <rect x="2739.58" y="3093.75" width="500" height="154.167"
+                                style="fill:#6d8764;stroke:#3a5431;stroke-width:4.17px;stroke-miterlimit:4;" />
+                            <g>
+                                <g><text x="2916.27px" y="3187.5px"
+                                        style="font-family:'Helvetica';font-size:62.5px;fill:#fff;">Antel</text></g>
+                            </g>
+                            <path d="M3072.92,3385.42l0.291,-62.5l-0.166,-35.959"
+                                style="fill:none;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;" />
+                            <path d="M3072.92,3265.08l14.75,29.084l-14.625,-7.209l-14.542,7.334l14.417,-29.209Z"
+                                style="fill:#3a5431;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;" />
+                            <path
+                                d="M2948.08,3093.75l0.125,-208.042l-833.333,0l0,-791.666l-750,-0l0,-746.125l169.708,0.041"
+                                style="fill:none;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;" />
+                            <path d="M2239.58,1177.08l125.292,0.292l0,653.875l41.667,0l-0,225l173.708,0"
+                                style="fill:none;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;" />
+                        </g>
+                        <path d="M1559.58,1347.96l-33.333,16.667l8.333,-16.667l-8.333,-16.666l33.333,16.666Z"
+                            style="fill:#3a5431;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;" />
+                        <path d="M2605.25,2056.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z"
+                            style="fill:#3a5431;fill-rule:nonzero;stroke:#3a5431;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="3184.67px" y="3545.83px"
+                                style="font-family:'Helvetica';font-size:50px;fill:#fff;">Uruguay</text></g>
+                    </g>
+                </g>
+            </a>
+            <a class="CompaniaAnonima">
+                <g xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect x="3031.25" y="2743.75" width="583.333" height="291.667"
+                            style="fill:#e3c800;stroke:#b09500;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M2239.58,1343.75l250.292,0.292l0,987.208l90.375,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#b09500;stroke-width:4.17px;" />
+                        <path d="M2605.25,2331.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z"
+                            style="fill:#b09500;fill-rule:nonzero;stroke:#b09500;stroke-width:4.17px;" />
+                        <rect x="2739.58" y="2481.25" width="500" height="154.167"
+                            style="fill:#e3c800;stroke:#b09500;stroke-width:4.17px;stroke-miterlimit:4;" />
+                        <path d="M3247.67,2743.79l-0.042,-24.75l-257.75,-0l0,-49.292"
+                            style="fill:none;fill-rule:nonzero;stroke:#b09500;stroke-width:4.17px;" />
+                        <path d="M2989.88,2644.75l16.667,33.333l-16.667,-8.333l-16.667,8.333l16.667,-33.333Z"
+                            style="fill:#b09500;fill-rule:nonzero;stroke:#b09500;stroke-width:4.17px;" />
+                        <path d="M2739.58,2519.79l-499.708,0.333l0,-384.417l-750,0l0,-904.458l48.708,0"
+                            style="fill:none;fill-rule:nonzero;stroke:#b09500;stroke-width:4.17px;" />
+                        <path d="M1563.58,1231.25l-33.333,16.667l8.333,-16.667l-8.333,-16.667l33.333,16.667Z"
+                            style="fill:#b09500;fill-rule:nonzero;stroke:#b09500;stroke-width:4.17px;" />
+                    </g>
+                    <g>
+                        <g><text x="2994.27px" y="2920.83px" style="font-family:'Helvetica';font-size:50px;">Compañía
+                                Anónima Nacion...</text></g>
+                    </g>
+                    <g>
+                        <g><text x="2871.14px" y="2575px"
+                                style="font-family:'Helvetica';font-size:62.5px;">Movilnet</text></g>
+                    </g>
+                </g>
+            </a>
+
+        </svg>
+    </div>
+    <script src="js/map.js"></script>
+    <script src="html/script.js"></script>
 </body>
+
 </html>
