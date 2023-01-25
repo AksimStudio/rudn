@@ -16,3 +16,11 @@ svg {
 .part {
 	opacity: 0.2;
 }
+
+path, rect, text{
+    cursor: pointer;
+}
+
+.Infrastructure>g>rect, .Infrastructure>g>path, .Infrastructure>g>g>.Infrastructure-suppliers, .Countries>g>rect, .Countries>g>path, .Countries>g>g>.Countries-a{
+    opacity: 1!important;
+}
