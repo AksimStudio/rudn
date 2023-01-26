@@ -1,10 +1,4 @@
-// $('.purple-path-1').hover(() =>{
-//     $('.purple-path-1').css('stroke-width','9px');
-//     $('rect.purple-path-1').css('stroke-width','15px');
-// },() =>{
-//     $('.purple-path-1').css('stroke-width','4.17px');
-//     $('rect.purple-path-1').css('stroke-width','10px');
-// });
+
 
 const s = '12px';
 const k = "16px";
