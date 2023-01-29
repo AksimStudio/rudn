@@ -1,0 +1,214 @@
+.box{
+    height: 40%;
+    width: 100%;
+}
+.box1{
+    height: 60%;
+    width: 100%;
+}
+.box2{
+    float: right;
+    width: 400;
+}
+th{
+    font-size: 30;
+    font-family: 'Abel', sans-serif;
+   font-style: normal;
+}
+.namepage {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(0, 121, 189);
+}
+.namepage1{
+    margin-top: 50;
+    margin-bottom: 3%;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(0, 121, 189);
+}
+
+.aboutproject{
+    float: right;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-right: 20;
+}
+
+.methodology{
+    margin-top: 3%;
+    float: right;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-right: 20;
+}
+
+.keylogo{
+    float: left;
+    margin-left: 2%;
+    padding: 10;
+    width: 500;
+}
+
+.aboutprojecttop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.aboutprojecttext{
+    height: 200px;
+}
+.methodologytop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.methodologytext{
+    height: 200px;
+}
+
+.huaweilogo{
+    float: right;
+    margin-right: 60;
+    width: 300;
+}
+
+.huawei{
+    margin-top: 30;
+    float: left;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-left: 10%;
+}
+
+.huaweitop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.huaweitext{
+    height: 200px;
+    
+}
+
+.zte{
+    float: right;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-right: 20;
+}
+.ztelogo{
+    margin-top: 3%;
+    float: left;
+    margin-left: 100;
+    padding: 10;
+    width: 300;
+}
+.ztetop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.ztetext{
+    height: 200px;
+}
+
+.samsunglogo{
+    float: right;
+    margin-right: 50;
+    width: 350;
+}
+
+.samsung{
+    float: left;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-left: 10%;
+}
+
+.samsungtop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.samsungtext{
+    height: 200px;
+    
+}
+
+.ericsson{
+    float: right;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-right: 20;
+}
+.ericssonlogo{
+    float: left;
+    margin-left: 100;
+    padding: 10;
+    width: 300;
+}
+.ericssontop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.ericssontext{
+    height: 200px;
+}
+
+
+.nokialogo{
+    float: right;
+    margin-right: 0;
+    width: 440;
+}
+
+.nokia{
+    margin-bottom: 50;
+    float: left;
+    width: 400px;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-left: 10%;
+   
+}
+
+.nokiatop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.nokiatext{
+    height: 200px;
+    
+}
+
+
+.others{
+    margin-bottom: 100;
+    width: 90%;
+    border: 1px solid black;
+    border-spacing: 0;
+    margin-left: 10%;
+}
+
+.otherstop{
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+.otherstext{
+    height: 200px;
+    
+}
